@@ -1,0 +1,9 @@
+import Foundation
+
+enum CollageModification {
+    case changeBackground(ShapeModification)
+    case connectControlPoints(Set<String>)
+    case disconnectControlPoints(Set<String>)
+    case changeCornerRadius(CGFloat)
+    case addShape(ShapeData)
+    case changeShape(ShapeModification, id: String)
